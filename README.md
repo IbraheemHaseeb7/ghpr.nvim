@@ -21,3 +21,14 @@ A minimal Neovim plugin to instantly open the GitHub Pull Request associated wit
     { "<leader>gp", "<cmd>OpenPR<cr>", desc = "Git: Open PR for line" },
   },
 }
+```
+
+### Using [packer.nvim](https://github.com/wbthomason/packer.nvim)
+```lua
+use {
+  'IbraheemHaseeb7/pr-opener.nvim',
+  config = function()
+    vim.keymap.set('n', '<leader>gp', ':OpenPR<CR>', { desc = "Git: Open PR for line" })
+  end
+}
+```
